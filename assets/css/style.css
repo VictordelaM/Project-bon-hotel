@@ -38,7 +38,8 @@ nav a{
 }
 
 nav a:hover{
-    color: #805b35;
+    color: #b48031;
+    text-shadow: #FC0 1px 0 10px;
 }
 
 .explore{
@@ -287,3 +288,92 @@ footer{
     font-weight: 300;
 }
 
+
+@media only screen and (max-width: 700px) { 
+    header{
+        justify-content: center;
+    }
+    nav {
+        flex-direction: column;
+        gap: 3vh;
+    }
+    .explore{
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+    .explore h1{
+        font-size: 4rem;
+    }
+    .headlineRooms{
+        text-align: center;
+    }
+    .checkButton{
+        padding: 2vh 10vw;
+    }
+    .buttonExplore{
+        padding: 2vh 10vw;
+    }
+    .icons{
+        flex-direction: column;
+        gap: 5vh;
+    }
+    .kitchen , .pool , .wifi , .gym, .taxi{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .icons img{
+        width: 20vw;
+    }
+    .roomsFrame {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4 1fr);
+        grid-template-areas: 
+        "twin"
+        "standard"
+        "view"
+        "deluxe" ;
+        gap: 5vh;
+    }
+    .roomsFrame div{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .roomsFrame p{
+        margin-top: 5vh;
+    }
+    .book h2{
+        margin: 0;
+    }
+    .bookButton{
+        padding: 3vh 10vw;
+    }
+    footer{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "links"
+        "mitte"
+        "rechts";
+        align-items: center;
+        justify-content: center;
+    }
+    .links, .mitte , .rechts{
+        justify-content: center;
+        align-items: center;
+        margin: 3% 0;
+        gap: 2vh;
+    }
+    .links p{
+        text-align: center;
+    }
+    .rechts input {
+        width: 90%;
+    }
+    .rechts a{
+        width: 90%;
+        margin-bottom: 10vh;
+    }
+}
