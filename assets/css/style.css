@@ -3,7 +3,10 @@
     margin: 0;
     box-sizing: border-box;
 }
-
+@font-face {
+    font-family: "ubuntubold";
+    src: url("../fonts/Ubuntu/Ubuntu-Bold.ttf");
+}
 @font-face {
     font-family: "Ubuntu";
     src: url("../fonts/Ubuntu/Ubuntu-Light.ttf");
@@ -72,7 +75,211 @@ nav a{
     border-radius: 5px;
 }
 
+.buttonStyle:hover{
+    background-color: #b48031;
+}
+
 .buttonExplore{
     padding: 3vh 15vh;
+}
+
+.facilities{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.facilitiesHeadline{
+    color: #957554;
+    font-family: "Ubuntu";
+    font-size: 2.8125rem;
+    font-weight: 500;
+    margin: 5vh 0;
+}
+
+.icons{
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    margin-bottom: 5vh;
+}
+
+.icons p{
+    color: #957554;
+    font-family: "Ubuntu";
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 3vh;
+}
+
+.rooms{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10vh;
+}   
+
+.headlineRooms{
+    color: #957554;
+    font-family: "Ubuntu";
+    font-size: 2.8125rem;
+    font-weight: 500;
+    margin: 10vh 0;
+}
+
+.roomsFrame{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "twin standard"
+    "view deluxe" ;
+    gap: 5vh;
+}
+
+.twin{
+    grid-area: twin;
+    background-image: url("../img/FqqiAvJejto.png");
+}
+
+.standard{
+    grid-area: standard;
+    background-image: url("../img/GqbU78bdJFM.png");
+}
+
+.view{
+    grid-area: view;
+    background-image: url("../img/w1RE0lBbREo.png");
+}
+
+.deluxe{
+    grid-area: deluxe;
+    background-image: url("../img/aRT5UCf2MYY.png");
+}
+
+.twin , .standard , .view, .deluxe{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40vh;
+    width: 40vw;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2.5vh;
+}
+
+.roomsFrame p{
+    color: #FFF;
+    font-family: "Ubuntu";
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.checkButton {
+    margin-bottom: 2.5vh;
+    padding: 2.5vh;
+}
+
+
+.book{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.book h2{
+    color: #957554;
+    text-align: center;
+    font-family: "Ubuntu";
+    font-size: 2.8125rem;
+    font-weight: 500;
+    margin: 5vh 0;
+    }
+
+.bookButton{
+    padding: 3vh 17vh;
+    margin: 5vh 0;
+}
+
+footer{
+    background-color: rgb(18,18 ,18);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "links mitte rechts";
+}
+
+.links{
+    grid-area: links;
+    display: flex;
+    flex-direction: column;
+    gap: 10vh;
+    margin: 10vh 0 20vh 5vw;
+}
+
+.kontaktinfos{
+    color: #FFF;
+    font-family: "Ubuntu";
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.kontaktinfos p:first-of-type{
+    font-family: "ubuntubold";
+}
+
+.mitte{
+    grid-area: mitte;
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    margin: 10vh 0 20vh;
+}
+
+.mitte a{
+    color: #FFF;
+    font-family: "Ubuntu";
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.rechts{
+    grid-area: rechts;
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    margin: 10vh 0 20vh;
+}
+
+.rechts p{
+    color: #FFF;
+    font-family: "ubuntubold";
+    font-size: 1.875rem;
+    font-weight: 500;
+}
+
+.rechts input , .rechts a{
+    width: 20vw;
+    padding: 4vh 0;
+    border-radius: 5px;
+}
+
+.rechts a{
+    text-align: center;
+}
+
+.rechts input::placeholder{
+    font-size: 1.5rem;
+    padding: 5vh;
+    color: rgba(0, 0, 0, 0.50);
+    font-family: "Ubuntu";
+    font-size: 1.5rem;
+    font-weight: 300;
 }
 
