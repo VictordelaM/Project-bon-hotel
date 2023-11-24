@@ -1,5 +1,78 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 @font-face {
     font-family: "Ubuntu";
     src: url("../fonts/Ubuntu/Ubuntu-Light.ttf");
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10vh;
+}
+
+.logo{
+    margin-top: 10vh;
+}
+
+nav{
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+}
+
+nav a{
+    color: #957554;
+    font-family: "Ubuntu";
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.explore{
+    background-image: url(../img/hDbCjHNdF48.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5%;
+    margin-top: 10%;
+}
+
+.explore h1{
+    color: #FFF;
+    font-family: "Ubuntu";
+    font-size: 5rem;
+    font-weight: 400;
+    margin-top: 15%;
+}
+
+.untertitel{
+    color: #FFF;
+    font-family: "Ubuntu";
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.buttonStyle{
+    color: #FFF;
+    font-family: "Ubuntu";
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-decoration: none;
+    background-color: #DFAA5B;
+    border-radius: 5px;
+}
+
+.buttonExplore{
+    padding: 3vh 15vh;
 }
 
