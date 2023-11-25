@@ -5,11 +5,17 @@
 }
 
 body{
-    background-color: green;
+    background: url(../../../assets/img/hDbCjHNdF48.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100vw;
+    height: 100vh;
 }
 
 section{
-    background-color: red;
+    background-color: white;
     margin: 0 20vw;
     display: flex;
     flex-direction: column;
@@ -19,14 +25,20 @@ section{
 
 input {
     padding: 2%;
+    width: 60%;
 }
+
 label{
     padding: 2%;
 }
 
-section img{
+select{
+    padding: 2%;
+}
+
+img{
     width: 50%;
-    margin: auto;
+    margin: 0 auto 5%;
 }
 
 .name{
@@ -71,6 +83,10 @@ section img{
     justify-content: space-between;
 }
 
+.telefon label{
+    font-size: 0.8rem;
+}
+
 .room{
     display: flex;
     flex-direction: column;
@@ -88,7 +104,20 @@ section img{
     flex-direction: column;
 }
 
+.submit input{
+    align-self: center;
+    background-color: #DFAA5B;
+    color: white;
+}
+
+.submit input:hover{
+    background-color: #b48031;
+}
+
+
 .submit label{
     font-size: 0.75rem;
     text-align: center;
 }
+
+
