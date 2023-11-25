@@ -1,0 +1,94 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: green;
+}
+
+section{
+    background-color: red;
+    margin: 0 20vw;
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    padding: 5%;
+}
+
+input {
+    padding: 2%;
+}
+label{
+    padding: 2%;
+}
+
+section img{
+    width: 50%;
+    margin: auto;
+}
+
+.name{
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.vorname{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nachname{
+    display: flex;
+    justify-content: space-between;
+}
+
+.adresse{
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.straße{
+    display: flex;
+    justify-content: space-between;
+}
+
+.plz{
+    display: flex;
+    justify-content: space-between;
+}
+
+.email{
+    display: flex;
+    justify-content: space-between;
+}
+
+.telefon{
+    display: flex;
+    justify-content: space-between;
+}
+
+.room{
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.pay{
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.submit{
+    display: flex;
+    flex-direction: column;
+}
+
+.submit label{
+    font-size: 0.75rem;
+    text-align: center;
+}
